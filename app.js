@@ -38,7 +38,7 @@ try {
 
 const saveSettings = () => {
   try {
-    localStorage.setItem("webos-settings", settings);
+    localStorage.setItem("webos-settings",JSON.stringify(settings));
   } catch {}
 };
 
